@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		157CDB0D1BEB057D0008A39C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 157CDB0C1BEB057D0008A39C /* libsqlite3.tbd */; };
-		15AEF1BB1BEB00A800732F84 /* Utile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15AEF1BA1BEB00A800732F84 /* Utile.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		15AEF1C41BEB03A000732F84 /* IPA.Framework.h in Headers */ = {isa = PBXBuildFile; fileRef = 15AEF1C31BEB03A000732F84 /* IPA.Framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15AEF1CD1BEB03C700732F84 /* PYConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E69E4A1BD7388F00511160 /* PYConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15AEF1CE1BEB03C700732F84 /* PYEntityAsist.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E69E4D1BD7388F00511160 /* PYEntityAsist.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,6 +21,7 @@
 		15AEF1D61BEB041B00732F84 /* PYEntityAsist.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E69E4E1BD7388F00511160 /* PYEntityAsist.m */; };
 		15AEF1D71BEB041B00732F84 /* PYEntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E69E501BD7388F00511160 /* PYEntityManager.m */; };
 		15AEF1D81BEB041B00732F84 /* PYEntitySql.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E69E521BD7388F00511160 /* PYEntitySql.m */; };
+		15C14B641D56F6890019E4A9 /* Utile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15C14B631D56F6890019E4A9 /* Utile.framework */; };
 		15E69E161BD7372F00511160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E69E151BD7372F00511160 /* main.m */; };
 		15E69E191BD7372F00511160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E69E181BD7372F00511160 /* AppDelegate.m */; };
 		15E69E1C1BD7372F00511160 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E69E1B1BD7372F00511160 /* ViewController.m */; };
@@ -60,10 +60,10 @@
 
 /* Begin PBXFileReference section */
 		157CDB0C1BEB057D0008A39C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		15AEF1BA1BEB00A800732F84 /* Utile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Utile.framework; sourceTree = "<group>"; };
 		15AEF1C11BEB03A000732F84 /* IPA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IPA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AEF1C31BEB03A000732F84 /* IPA.Framework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPA.Framework.h; sourceTree = "<group>"; };
 		15AEF1C51BEB03A000732F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15C14B631D56F6890019E4A9 /* Utile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Utile.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/PlainboatShuttle-gxrzldxzktnfvdfzlsvkcdmcflll/Build/Products/Debug-iphoneos/Utile.framework"; sourceTree = "<group>"; };
 		15E69E111BD7372F00511160 /* IPASourceCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPASourceCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15E69E151BD7372F00511160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		15E69E171BD7372F00511160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -113,8 +113,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C14B641D56F6890019E4A9 /* Utile.framework in Frameworks */,
 				157CDB0D1BEB057D0008A39C /* libsqlite3.tbd in Frameworks */,
-				15AEF1BB1BEB00A800732F84 /* Utile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +147,8 @@
 		15E69E081BD7372F00511160 = {
 			isa = PBXGroup;
 			children = (
+				15C14B631D56F6890019E4A9 /* Utile.framework */,
 				157CDB0C1BEB057D0008A39C /* libsqlite3.tbd */,
-				15AEF1BA1BEB00A800732F84 /* Utile.framework */,
 				15E69E571BD7389800511160 /* FMDB */,
 				15E69E131BD7372F00511160 /* IPASourceCode */,
 				15E69E2D1BD7372F00511160 /* IPASourceCodeTests */,
@@ -551,6 +551,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "IPA.IPA-Framework";
 				PRODUCT_NAME = IPA;
@@ -678,6 +679,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = iOSPersistenceAPI.IPASourceCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

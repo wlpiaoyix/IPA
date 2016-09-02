@@ -27,6 +27,10 @@
 -(int) minute;
 -(int)second;
 -(NSString*) dateFormateDate:(NSString*) formatePattern;
+/**
+ 0b111111：年月日时分秒，1：保持原值，0：置为0；
+ */
+-(NSDate *) setCompentsWithBinary:(int) binary;
 +(NSDate *) dateStartOfDay:(NSDate *)date;
 +(NSDate *) monthStartOfDay:(NSDate *)date;
 +(NSDate *) monthEndOfDay:(NSDate *)date;
